@@ -154,8 +154,8 @@ function App() {
         )
       }
     </div>
-     <table className="w-full mt-12 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
-        <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+     <table className="w-full mt-12 text-sm text-left rtl:text-right text-gray-50">
+        <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
             <tr>
                <th scope="col" className="px-6 py-3 bg-indigo-300 text-white">
                   Select
