@@ -22,11 +22,24 @@ const connectDB = async () => {
 
 
 // Middlewares
-app.use(express.json())
+app.use(express.json());
+const _dirname = path.dirname("");
+const buildpath = path.join(_dirname, "../Frontend/dist");
+app.use(express.static(buildpath));
 app.use(cors({origin:"http://localhost:5173",credentials:true}))
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use("/api/v1", table);
+app.get("/*",function(req,res){
+    res.sendFile(
+        path.join(__dirname,"../Frontend/dist/index.html"),
+        function(err){
+            if(err){
+                res.status(500).send(err);
+            }
+        }
+    );
+})
 
 
 const PORT = process.env.PORT || 5000;

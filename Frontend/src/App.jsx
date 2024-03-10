@@ -157,25 +157,25 @@ function App() {
      <table className="w-full mt-12 text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
         <thead className="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
             <tr>
-               <th scope="col" className="px-6 py-3 bg-indigo-300">
+               <th scope="col" className="px-6 py-3 bg-indigo-300 text-white">
                   Select
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-400">
+                <th scope="col" className="px-6 py-3 bg-indigo-400 text-white">
                     SNo.
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-300">
+                <th scope="col" className="px-6 py-3 bg-indigo-300 text-white">
                     Name
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-400">
+                <th scope="col" className="px-6 py-3 bg-indigo-400 text-white">
                     Phone
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-300">
+                <th scope="col" className="px-6 py-3 bg-indigo-300 text-white">
                     Email
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-400">
+                <th scope="col" className="px-6 py-3 bg-indigo-400 text-white">
                     Hobbies
                 </th>
-                <th scope="col" className="px-6 py-3 bg-indigo-300">
+                <th scope="col" className="px-6 py-3 bg-indigo-300 text-white">
                     Action
                 </th>
             </tr>
