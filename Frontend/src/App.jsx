@@ -40,7 +40,7 @@ function App() {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:8800/api/v1/create",formData);
+      const res = await axios.post("/api/v1/create",formData);
       setAdd(false);
       alert("Data added Successfully");
       setFormData({
@@ -57,7 +57,7 @@ function App() {
 
   const fetchData = async () => {
     try {
-      const res = await axios.get("http://localhost:8800/api/v1/all");
+      const res = await axios.get("/api/v1/all");
       setTableData(res.data);
     } catch (err) {
       alert(res.data.error.message);
@@ -71,7 +71,7 @@ function App() {
   const handleUpdate = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.put("http://localhost:8800/api/v1/update",formDataEdit)
+      const res = await axios.put("/api/v1/update",formDataEdit)
       alert("Updated Successfully");
       fetchData();
       setEditSection(false);
@@ -97,7 +97,7 @@ function App() {
 
   const handleDelete = async (id) => {
     try {
-      const res = await axios.delete("http://localhost:8800/api/v1/delete/"+id)
+      const res = await axios.delete("/api/v1/delete/"+id)
       alert("Deleted Successfully");
       fetchData();
     } catch (error) {
@@ -124,7 +124,7 @@ function App() {
       }
       else{
         console.log(selectedRows);
-        const res = await axios.post("http://localhost:8800/api/v1/mail",{
+        const res = await axios.post("/api/v1/mail",{
           selectedRows:selectedRows,
         });
         alert("Email sent successfully");
