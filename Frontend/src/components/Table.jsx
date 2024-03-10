@@ -45,7 +45,7 @@ const Table = ({
               onClick={() => {
                 handleEdit(el);
               }}
-              className="font-medium bg-blue-500 rounded-md p-1 text-white text-blue-600 dark:text-blue-500 hover:underline"
+              className="font-medium bg-blue-500 rounded-md p-1 text-white hover:underline"
             >
               Edit
             </button>
@@ -53,7 +53,7 @@ const Table = ({
               onClick={() => {
                 handleDelete(el._id);
               }}
-              className="font-medium ml-2 bg-red-500 p-1 rounded-md text-white dark:text-blue-500 hover:underline"
+              className="font-medium ml-2 bg-red-500 p-1 rounded-md text-white hover:underline"
             >
               Delete
             </button>
